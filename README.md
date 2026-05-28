@@ -1,73 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8>
-   <title>Survey Form</title>
-   </head>
-   <body>
-     <main>
-     <h1>Survey Form</h1>
-     <p>Let us know how we can improve freeCodeCamp</p>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Survey form</title>
+</head>
 
-     <form>
-   
-   <!--Name, Email, Age-->
-   <lable for="name">Name</lable>
-   <input type="text" id="name" name="name" placeholder="Enter your name">
+<body>
+   <center>
+      <h1>Survey form</h1>
+      <p>Let us know how we can improve freeCodeCamp</p>
+      <form>
+         <table cellpadding="10">
+            <tr>
+               <td> * Name:</td>
+               <td>
+                  <input type="text" placeholder="Enter your Name">
+               </td>
+            </tr>
 
-   <lable for="email">Email</lable>
-   <input type="email" id="email" name="email" placeholder="Enter your Emmail">
+            <tr>
+            <td> * Email:</td>
+            <td>
+            <input type="email" placeholder="Enter your Email">
+            </td>
+            </tr>
 
-   <lable for="age">Age</lable>
-   <input type="number" id="age" name="age" placeholder="Age">
+            <tr>
+            <td> * Age:</td>
+            <td>
+            <input type="number" placeholder="Age">
+            </td>
+            </tr>
 
-   <!--Dropdrown-->
-   <lable for="role">Which option best describes your current role?</lable>
-   <select id="role" name="role">
-   <option value="">Select an option</option>
-   <option value="student">Students</option>
-   <option value="job">Full time Job</option>
-   <option value="learner">Full Time learner</option>
-   <option value="prefer-not">Prefer not to say</option>
-   </select>
+            <tr>
+            <td>
+             Which option best describes your current role?
+             </td>
 
-   <!--Radio buttons-->
-   <fieldset>
-   <legend>How likely is that you would recommend freeCodeCamp to a friend?</legend>
+             <td>
+             <select>
+             <option>Student</option>
+             <option>Teacher</option>
+             <option>Developer</option>
+             </select>
+             </td>
+             </tr>
 
-   <input type="radio" id="definitely" name="recommend" value="definitely">
-   <lable for="definitely">Definitely</lable>
+             <tr>
+             <td>
+             * How likely is that you would recommend freeCodeCamp to a friend?
+             </td>
 
-   <input type="radio" name="recommend" value="maybe">
-   <lable for="maybe">Maybe</lable>
+             <td>
+             <input type="radio" name="recommend">Definitely<br><br>
+             <input type="radio" name="recommend"Maybe<br><br>
+             <input type="radio" name="recommend">Npt sure
+             </td>
+             </tr>
 
-   <input type="radio" id="not sure" name="recommend" value="not-sure">
-   <lable for="not-sure">Not sure</lable>
-   </fieldset>
+             <tr>
+             <td>What do you like most in FCC:</td>
 
-   !--Checkboxes-->
-   <fieldset>
-   <legend>Things that should be improved in the future (Check all that apply)</legend>
+                 <td>
+                 <select>
+                 <option>Select an option</option>
+                 <option>Projects</option>
+                 <option>Community</option>
+                 </select>
+                 </td>
+                 </tr>
 
-   <input type="checkbox" id="front-end" name="improvement" value="front-end">
-   <lable for="front-end">Front-end Projects</lable>
+                 <tr>
+                 <td>
+                 Things that should be improved in the future (Check all that apply):
+                 </td>
 
-   <input type="checkbox" id="back-end" name="improvement" value="back-end">
-   <lable for="back-end">Back-end Projects</lable>
+                 <td>
+                 <input type="checkbox">Front-end Projects <br><br>
+                 <input type="checkbox">Back-end Projects <br><br>
+                 <input type="checkbox">Data Visualization
+                 </td>
+                 </tr>
+                 </table>
+                 <br>
+                 <input type="submit" value="Submit">
+                 </form>
+                 </center>
+                 </body>
+                 </html>
 
-    <input type="checkbox" id="data-vis" name="improvement" value="data-vis">
-   <lable for="data-vis">Data Visualization</lable>
-   </fieldset>
+                 
 
-   <!--text area-->
-   <lable for="comments">Any comments or Suggestions?</lable>
-   <textarea id="comments" name="comments" placeholder="Enter your comment here..."></textarea>
-
-   <button type="submit">Submit</button>
-   </form>
-   </main>
-   </body>
-   </html>
-   </main>
-   </body>
-   </html>
+   </center>
+</body>
